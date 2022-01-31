@@ -1,0 +1,26 @@
+{
+  "name": "geckos-v2-cjs-example",
+  "version": "1.0.0",
+  "description": "Geckos v2 uses ESM. Here is an example how to use it in a CJS project.",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm run tsc && npm-run-all --parallel dev:*",
+    "dev:tsc": "tsc --watch",
+    "dev:nodemon": "nodemon dist/server.js",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "Yannick Deubel",
+  "license": "MIT",
+  "dependencies": {
+    "@geckos.io/server": "^2.1.4",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.6.0-dev.20211206"
+  }
+}

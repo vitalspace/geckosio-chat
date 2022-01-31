@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chat by VitalSpace</title>
+  <script src="./geckos.io-client.2.1.4.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      padding: 10px;
+    }
+
+    .cell {
+      min-height: 75px;
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    #i7kzm {
+      padding: 10px;
+      margin: 5px 5px 5px 5px;
+      border: 1px solid black;
+    }
+
+    #ih4mq {
+      padding: 10px;
+      margin: 5px 5px 5px 5px;
+      border: 1px solid black;
+    }
+
+    #i3bn {
+      height: auto;
+    }
+
+    #il0r {
+      height: auto;
+      min-height: auto;
+    }
+
+    #iwdl {
+      width: 50%;
+      margin: 20px auto 20px auto;
+      height: 400px;
+      border: 1px solid black;
+    }
+
+    #ibs7 {
+      flex-basis: 30%;
+      margin: 0 10px 0 10px;
+      border: 1px solid black;
+      overflow-y: auto;
+    }
+
+    #ica5 {
+      flex-basis: 70%;
+      margin: 0 10px 0 10px;
+      border: 1px solid black;
+      flex-direction: column;
+      align-self: stretch;
+      display: flex;
+      justify-content: flex-end;
+      overflow-y: auto;
+    }
+
+    #ijwa {
+      height: 100%;
+    }
+
+    #im4i8 {
+      padding: 10px;
+      margin: 5px 5px 5px 5px;
+      height: 100%;
+    }
+
+    #iwwa7 {
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column-reverse;
+      display: flex;
+      border: 1px solid black;
+    }
+
+    #iw07v {
+      padding: 10px;
+      margin: 5px 5px 5px 5px;
+      justify-content: space-between;
+      align-items: flex-end;
+      text-align: center;
+    }
+
+    #iltuq {
+      flex-basis: 15%;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-direction: column-reverse;
+      align-self: stretch;
+      display: flex;
+      border: 1px solid black;
+    }
+
+    #ixcnx {
+      height: auto;
+      min-height: auto;
+    }
+
+    #iqwkr {
+      width: 50%;
+      margin: 20px auto 20px auto;
+      height: auto;
+      border-radius: 1px 0 0 0;
+      border: 1px solid black;
+    }
+
+    #i6q21 {
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column-reverse;
+      display: flex;
+      border: 1px solid black;
+      min-height: auto;
+    }
+
+    #i6y8x {
+      padding: 10px;
+      margin: 5px 5px 5px 5px;
+      justify-content: space-between;
+      align-items: flex-end;
+      text-align: center;
+    }
+
+    #i6ui4 {
+      flex-basis: 15%;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-direction: column-reverse;
+      align-self: stretch;
+      display: flex;
+      border: 1px solid black;
+      min-height: 0;
+    }
+
+    #iywd8 {
+      height: auto;
+      min-height: auto;
+    }
+
+    #ihsjj {
+      width: 50%;
+      margin: 20px auto 20px auto;
+      height: auto;
+      border-radius: 1px 0 0 0;
+      border: 1px solid black;
+    }
+
+    #imatm {
+      padding: 10px;
+      margin: 5px 5px 5px 5px;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #iwdl {
+        width: 90%;
+      }
+
+      #iqwkr {
+        width: 90%;
+      }
+
+      #ihsjj {
+        width: 90%;
+      }
+
+      #ica5 {
+        height: 200px;
+      }
+
+      #ibs7 {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="i3bn" class="row">
+    <div id="il0r" class="cell">
+      <div id="ihsjj" class="row">
+        <div id="iywd8" class="cell">
+          <div class="row">
+            <div id="i6q21" class="cell">
+              <input type="text" placeholder="nick name" id="imatm" />
+            </div>
+            <div id="i6ui4" class="cell">
+              <button id="i6y8x">SEND
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="iwdl" class="row">
+        <div id="ibs9" class="cell">
+          <div id="ijwa" class="row">
+            <div id="ibs7" class="cell">
+            </div>
+            <div id="ica5" class="cell">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="iqwkr" class="row">
+        <div id="ixcnx" class="cell">
+          <div class="row">
+            <div id="iwwa7" class="cell">
+              <textarea id="im4i8" placeholder="Insert your text here"></textarea>
+            </div>
+            <div id="iltuq" class="cell">
+              <button id="iw07v">SEND
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const channel = geckos({ port: 3000 });
+
+    channel.onConnect(error => {
+      if (error) console.error(error.message)
+
+      const nickname = document.querySelector('#i6y8x');
+
+      nickname.addEventListener('click', e => {
+        e.preventDefault();
+        if (e) {
+          const value = document.querySelector('#imatm').value.trim();
+          channel.emit('new_nick_name', value);
+        }
+      })
+
+      const message = document.querySelector('#iw07v');
+      message.addEventListener('click', e => {
+        e.preventDefault();
+        if (e) {
+          const message = document.querySelector('#im4i8').value.trim();
+          channel.emit('message', message);
+          document.querySelector('#im4i8').value = '';
+        }
+      })
+
+      const enter_button = document.querySelector("#im4i8");
+      enter_button.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          const message = document.querySelector('#im4i8').value.trim();
+          channel.emit('message', message);
+          document.querySelector('#im4i8').value = '';
+        }
+      });
+
+
+      channel.on('message_to_room', (data) => {
+        const message = document.querySelector('#ica5')
+        message.innerHTML += `
+          <div id="ih4mq"> ${data.info.name}:  ${data.message}</div>
+        `
+      })
+
+      channel.on('current_users', (data) => {
+        const users = document.querySelector('#ibs7')
+        users.innerHTML = ""
+        Object.keys(data).forEach((id) => {
+          users.innerHTML += `
+            <div id="i7kzm">${data[id].name}</div>
+          `
+        })
+      })
+      
+    })
+
+  </script>
+
+</body>
+
+</html>
