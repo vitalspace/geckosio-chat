@@ -7,7 +7,7 @@ A simple Real Time Chat using Geckos.io
 npx gitget https://github.com/vitalspace/geckosio-chat.git
 
 # change directory
-cd geckosio-cha
+cd geckosio-chat
 
 # install
 npm install
