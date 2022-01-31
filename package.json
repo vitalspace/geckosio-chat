@@ -1,7 +1,7 @@
 {
-  "name": "geckos-v2-cjs-example",
+  "name": "geckosio-chat",
   "version": "1.0.0",
-  "description": "Geckos v2 uses ESM. Here is an example how to use it in a CJS project.",
+  "description": "A simple Real Time Chat using Geckos.io",
   "main": "dist/index.js",
   "type": "commonjs",
   "scripts": {
@@ -12,7 +12,7 @@
     "tsc": "tsc"
   },
   "keywords": [],
-  "author": "Yannick Deubel",
+  "author": "vitalspace",
   "license": "MIT",
   "dependencies": {
     "@geckos.io/server": "^2.1.4",
