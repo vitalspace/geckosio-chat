@@ -1,14 +1,13 @@
-# Geckos.io v2 CJS example
+# Real Time Chat Example
 
-Geckos v2 uses ESM.  
-Here is an example how to use it in a CJS project.
+A simple Real Time Chat using Geckos.io
 
 ```bash
 # clone
-npx gitget geckosio/geckos-v2-cjs-example
+npx gitget https://github.com/vitalspace/geckosio-chat.git
 
 # change directory
-cd geckos-v2-cjs-example
+cd geckosio-cha
 
 # install
 npm install
